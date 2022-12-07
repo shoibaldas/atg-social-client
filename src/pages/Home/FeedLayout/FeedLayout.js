@@ -4,7 +4,7 @@ import RightSideContent from '../RightSideContent/RightSideContent';
 
 const FeedLayout = () => {
     return (
-        <div>
+        <div className='container'>
             <div className='col-md-8'>
                 <HomeFeed></HomeFeed>
             </div>
