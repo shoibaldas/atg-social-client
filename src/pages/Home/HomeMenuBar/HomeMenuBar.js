@@ -20,7 +20,7 @@ const HomeMenuBar = () => {
             <div className='col-md-6 d-flex justify-content-end'>
                 <div>
                     <button type="button" className="btn btn-light fw-semibold fs-6">Write a Post<i className="px-4 fa-solid fa-caret-down"></i></button>
-                    <button type="button" className="mx-2 btn btn-primary fw-semibold fs-6"><i class="fa-solid fa-user-group"></i><span className='px-2'>Join Group</span></button>
+                    <button type="button" className="mx-2 btn btn-primary fw-semibold fs-6"><i className="fa-solid fa-user-group"></i><span className='px-2'>Join Group</span></button>
                 </div>
             </div>
             <br />
