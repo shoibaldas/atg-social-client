@@ -37,17 +37,21 @@ const HomeFeed = () => {
                                 </div>
                             </div>
                             <p className="card-text">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
-                            <div className='d-flex justify-content-between'>
+                            <div className='position-relative d-flex justify-content-between align-items-center'>
                                 <div className='d-flex align-items-center'>
                                     <img src={person1} alt="" />
-                                    <p className='mx-4 fs-6 fw-bolder'>Sarthak Kamra</p>
-                                </div>
-                                <div className='d-flex align-items-center'>
                                     <div>
-                                        <p><i className="fa-regular fa-eye"></i><span className='px-2'>1.4k views</span></p>
+                                        <p className='mx-3 fs-6 fw-bolder' style={{ margin: '0' }}>Sarthak Kamra</p>
+                                        <p className='mx-3 d-block d-md-none d-lg-none d-xl-none d-xxl-none' style={{ margin: '0' }}><i className="fa-regular fa-eye"></i><span className='px-2'>1.4k views</span></p>
                                     </div>
-                                    <div className='mx-4'>
-                                        <button className='border-0 rounded-1 px-2 py-1'> <i className="fa-solid fa-share-nodes"></i></button>
+                                </div>
+                                <div className='position-absolute d-flex align-items-center' style={{ right: '-1rem' }}>
+                                    <div>
+                                        <p className='d-none d-md-block' style={{ margin: '0' }}><i className="fa-regular fa-eye"></i><span className='px-2'>1.4k views</span></p>
+                                    </div>
+                                    <div className='mx-3' >
+                                        <button className='border-0 rounded-1 px-2 py-1 d-none d-md-block'><i className="fa-solid fa-share-nodes"></i></button>
+                                        <button className='border-0 rounded-1 px-2 py-1 d-block d-md-none d-lg-none d-xl-none d-xxl-none'><i className="fa-solid fa-share-nodes"></i><span className='mx-2'>Share</span></button>
                                     </div>
                                 </div>
                             </div>
@@ -73,17 +77,21 @@ const HomeFeed = () => {
                                 </div>
                             </div>
                             <p className="card-text">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
-                            <div className='d-flex justify-content-between'>
+                            <div className='position-relative d-flex justify-content-between align-items-center'>
                                 <div className='d-flex align-items-center'>
                                     <img src={person2} alt="" />
-                                    <p className='mx-4 fs-6 fw-bolder'>Sarah West</p>
-                                </div>
-                                <div className='d-flex align-items-center'>
                                     <div>
-                                        <p><i className="fa-regular fa-eye"></i><span className='px-2'>1.4k views</span></p>
+                                        <p className='mx-3 fs-6 fw-bolder' style={{ margin: '0' }}>Sarah West</p>
+                                        <p className='mx-3 d-block d-md-none d-lg-none d-xl-none d-xxl-none' style={{ margin: '0' }}><i className="fa-regular fa-eye"></i><span className='px-2'>1.4k views</span></p>
                                     </div>
-                                    <div className='mx-4'>
-                                        <button className='border-0 rounded-1 px-2 py-1'> <i className="fa-solid fa-share-nodes"></i></button>
+                                </div>
+                                <div className='position-absolute d-flex align-items-center' style={{ right: '-1rem' }}>
+                                    <div>
+                                        <p className='d-none d-md-block' style={{ margin: '0' }}><i className="fa-regular fa-eye"></i><span className='px-2'>1.4k views</span></p>
+                                    </div>
+                                    <div className='mx-3' >
+                                        <button className='border-0 rounded-1 px-2 py-1 d-none d-md-block'><i className="fa-solid fa-share-nodes"></i></button>
+                                        <button className='border-0 rounded-1 px-2 py-1 d-block d-md-none d-lg-none d-xl-none d-xxl-none'><i className="fa-solid fa-share-nodes"></i><span className='mx-2'>Share</span></button>
                                     </div>
                                 </div>
                             </div>
@@ -115,17 +123,21 @@ const HomeFeed = () => {
                             <div className='col-md-12 border border-1 rounded p-2 text-center mt-2 mb-4'>
                                 <Link to='/' className='text-danger text-decoration-none fs-6 fw-semibold'>Visit Website</Link>
                             </div>
-                            <div className='d-flex justify-content-between'>
+                            <div className='position-relative d-flex justify-content-between align-items-center'>
                                 <div className='d-flex align-items-center'>
                                     <img src={person3} alt="" />
-                                    <p className='mx-4 fs-6 fw-bolder'>Ronal Jones</p>
-                                </div>
-                                <div className='d-flex align-items-center'>
                                     <div>
-                                        <p><i className="fa-regular fa-eye"></i><span className='px-2'>1.4k views</span></p>
+                                        <p className='mx-3 fs-6 fw-bolder' style={{ margin: '0' }}>Ronal Jones</p>
+                                        <p className='mx-3 d-block d-md-none d-lg-none d-xl-none d-xxl-none' style={{ margin: '0' }}><i className="fa-regular fa-eye"></i><span className='px-2'>1.4k views</span></p>
                                     </div>
-                                    <div className='mx-4'>
-                                        <button className='border-0 rounded-1 px-2 py-1'> <i className="fa-solid fa-share-nodes"></i></button>
+                                </div>
+                                <div className='position-absolute d-flex align-items-center' style={{ right: '-1rem' }}>
+                                    <div>
+                                        <p className='d-none d-md-block' style={{ margin: '0' }}><i className="fa-regular fa-eye"></i><span className='px-2'>1.4k views</span></p>
+                                    </div>
+                                    <div className='mx-3' >
+                                        <button className='border-0 rounded-1 px-2 py-1 d-none d-md-block'><i className="fa-solid fa-share-nodes"></i></button>
+                                        <button className='border-0 rounded-1 px-2 py-1 d-block d-md-none d-lg-none d-xl-none d-xxl-none'><i className="fa-solid fa-share-nodes"></i><span className='mx-2'>Share</span></button>
                                     </div>
                                 </div>
                             </div>
@@ -154,24 +166,27 @@ const HomeFeed = () => {
                                 <p className='mx-4'><GoLocation></GoLocation><span className='fs-6 fw-semibold mx-2'>Noida, India</span></p>
                             </div>
                             <div className='col-md-12 border border-1 rounded p-2 text-center mt-2 mb-4'>
-                                <Link to='/' className='text-success text-decoration-none fs-6 fw-semibold'>Apply on Timesjobs</Link>
+                                <Link to='/' className='text-decoration-none fs-6 fw-semibold' style={{ color: '#02B875' }}>Apply on Timesjobs</Link>
                             </div>
-                            <div className='d-flex justify-content-between'>
+                            <div className='position-relative d-flex justify-content-between align-items-center'>
                                 <div className='d-flex align-items-center'>
                                     <img src={person4} alt="" />
-                                    <p className='mx-4 fs-6 fw-bolder'>Ronal Jones</p>
-                                </div>
-                                <div className='d-flex align-items-center'>
                                     <div>
-                                        <p><i className="fa-regular fa-eye"></i><span className='px-2'>1.4k views</span></p>
+                                        <p className='mx-3 fs-6 fw-bolder' style={{ margin: '0' }}>Ronal Jones</p>
+                                        <p className='mx-3 d-block d-md-none d-lg-none d-xl-none d-xxl-none' style={{ margin: '0' }}><i className="fa-regular fa-eye"></i><span className='px-2'>1.4k views</span></p>
                                     </div>
-                                    <div className='mx-4'>
-                                        <button className='border-0 rounded-1 px-2 py-1'> <i className="fa-solid fa-share-nodes"></i></button>
+                                </div>
+                                <div className='position-absolute d-flex align-items-center' style={{ right: '-1rem' }}>
+                                    <div>
+                                        <p className='d-none d-md-block' style={{ margin: '0' }}><i className="fa-regular fa-eye"></i><span className='px-2'>1.4k views</span></p>
+                                    </div>
+                                    <div className='mx-3' >
+                                        <button className='border-0 rounded-1 px-2 py-1 d-none d-md-block'><i className="fa-solid fa-share-nodes"></i></button>
+                                        <button className='border-0 rounded-1 px-2 py-1 d-block d-md-none d-lg-none d-xl-none d-xxl-none'><i className="fa-solid fa-share-nodes"></i><span className='mx-2'>Share</span></button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>

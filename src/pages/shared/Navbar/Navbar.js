@@ -145,13 +145,11 @@ const Navbar = () => {
                                     </div>
                                     <div className='col-md-6 text-center'>
                                         <img src={img} alt="" />
-
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </nav >

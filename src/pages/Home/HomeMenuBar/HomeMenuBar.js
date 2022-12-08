@@ -3,24 +3,30 @@ import './HomeMenuBar.css';
 
 const HomeMenuBar = () => {
     return (
-        <div className='mt-5 container d-flex justify-content-between align-items-center p-2 border-bottom border-2'>
+        <div className='mt-4 container d-flex justify-content-between align-items-center p-2 border-bottom border-2'>
             <div className='d-flex col-md-6'>
 
-                <p className='mx-2 fw-semibold text-black'>All Posts(32)</p>
+                <p className='d-none d-md-block  mx-2 fw-bolder text-black' style={{ margin: '0' }}>All Posts(32)</p>
 
-                <p className='mx-2 fs-normal'>Article</p>
+                <p className='d-block d-md-none d-lg-none d-xl-none d-xxl-none mx-2 fw-bolder text-black' style={{ margin: '0' }}>Posts(368)</p>
 
-                <p className='mx-2 fs-normal'>Event</p>
+                <p className='d-none d-md-block  mx-2 fs-normal' style={{ margin: '0' }}>Article</p>
 
-                <p className='mx-2 fs-normal'>Education</p>
+                <p className='d-none d-md-block  mx-2 fs-normal' style={{ margin: '0' }}>Event</p>
 
-                <p className='mx-2 fs-normal'>Job</p>
+                <p className='d-none d-md-block  mx-2 fs-normal' style={{ margin: '0' }}>Education</p>
 
+                <p className='d-none d-md-block  mx-2 fs-normal' style={{ margin: '0' }}>Job</p>
             </div>
-            <div className='col-md-6 d-flex justify-content-end'>
-                <div>
-                    <button type="button" className="btn btn-light fw-semibold fs-6">Write a Post<i className="px-4 fa-solid fa-caret-down"></i></button>
-                    <button type="button" className="mx-2 btn btn-primary fw-semibold fs-6"><i className="fa-solid fa-user-group"></i><span className='px-2'>Join Group</span></button>
+            <div className='col-md-6 container-fluid d-flex justify-content-end'>
+                <div className='d-none d-md-flex'>
+                    <button type="button" className="btn btn-light fw-semibold fs-6">Write a Post<i className="mx-2 fa-solid fa-caret-down"></i></button>
+                </div>
+                <div className='d-none d-md-flex mx-2 '>
+                    <button type="button" className="btn btn-primary fw-semibold fs-6"><i className="fa-solid fa-user-group"></i><span className='px-2'>Join Group</span></button>
+                </div>
+                <div className='d-flex d-md-none d-lg-none d-xl-none d-xxl-none'>
+                    <button type="button" className="btn btn-light fw-semibold fs-6">Filter: All<i className="mx-2 fa-solid fa-caret-down"></i></button>
                 </div>
             </div>
             <br />
