@@ -6,7 +6,6 @@ import { FaFacebook } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { AiOutlineEye } from "react-icons/ai";
 import img1 from '../../../assets/feedpersons/person4.png';
-import './Navbar.css';
 import { StateContext } from '../../../context/StateProvider';
 
 
