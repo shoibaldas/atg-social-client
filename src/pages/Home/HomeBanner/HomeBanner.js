@@ -59,13 +59,9 @@ const HomeBanner = () => {
                             <div className='row'>
                                 <div className='col-md-6'>
                                     <div className="mb-3 ">
-                                        <div className='d-flex'>
-                                            <div>
-                                                <input disabled type="text" className="p-2 container-fluid" placeholder='First Name' />
-                                            </div>
-                                            <div>
-                                                <input disabled type="text" className="p-2 container-fluid" placeholder='Last Name' />
-                                            </div>
+                                        <div className='row' style={{ paddingLeft: '.78rem', paddingRight: '.78rem' }}>
+                                            <input disabled type="text" className="p-2 col " placeholder='First Name' />
+                                            <input disabled type="text" className="p-2 col" placeholder='Last Name' />
                                         </div>
                                         <input disabled type="text" className="p-2 container-fluid" placeholder='Email' />
                                         <div className='position-relative'>

@@ -10,7 +10,7 @@ const StateProvider = ({ children }) => {
         setLoggedIn(!loggedIn);
     }
 
-    const stateInfo = { loggedIn, setLoggedIn, handleUser };
+    const stateInfo = { loggedIn, handleUser };
     return (
         <StateContext.Provider value={stateInfo}>
             {children}

@@ -75,14 +75,10 @@ const Navbar = () => {
                             </div>
                             <div className='row'>
                                 <div className='col-md-6'>
-                                    <div className="mb-3 ">
-                                        <div className='d-flex'>
-                                            <div>
-                                                <input disabled type="text" className="p-2 container-fluid" placeholder='First Name' />
-                                            </div>
-                                            <div>
-                                                <input disabled type="text" className="p-2 container-fluid" placeholder='Last Name' />
-                                            </div>
+                                    <div className="mb-3">
+                                        <div className='row' style={{ paddingLeft: '.78rem', paddingRight: '.78rem' }}>
+                                            <input disabled type="text" className="p-2 col " placeholder='First Name' />
+                                            <input disabled type="text" className="p-2 col" placeholder='Last Name' />
                                         </div>
                                         <input disabled type="text" className="p-2 container-fluid" placeholder='Email' />
                                         <div className='position-relative'>
@@ -119,7 +115,7 @@ const Navbar = () => {
                 </div>
 
             </div>
-            {/* Login-Modal */}
+            {/* {/* Login-Modal */}
             <div className="modal fade" id="myModal2" tabIndex="-1" aria-labelledby="myModal2" aria-hidden="true" >
                 <div className="modal-dialog" style={{ maxWidth: '50rem', marginTop: '4rem' }}>
                     <div className="modal-content">
