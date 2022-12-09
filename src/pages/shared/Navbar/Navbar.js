@@ -97,15 +97,15 @@ const Navbar = () => {
                                         <button onClick={handleLogin} type="button" className='mt-4 btn btn-primary rounded-pill container-fluid fw-semibold d-none d-md-block'>Create Account</button>
 
                                         <div className='d-flex align-items-center justify-content-between d-block d-md-none d-lg-none d-xl-none d-xxl-none'>
-                                            <button type="button" className='mt-4 px-4 btn btn-primary rounded-pill fw-semibold'>Create Account</button>
+                                            <button onClick={handleLogin} type="button" className='mt-4 px-4 btn btn-primary rounded-pill fw-semibold'>Create Account</button>
                                             <button type="button" className='mt-4 bg-transparent border-0 fw-semibold' data-bs-toggle="modal" data-bs-target="#myModal2" style={{ fontSize: '.8rem' }} ><u>or, Sign In</u></button>
                                         </div>
 
                                         <div className='mt-4 d-flex align-items-center justify-content-center border border-1' >
-                                            <p className='p-2' style={{ margin: '0' }}><FaFacebook className='text-primary' style={{ width: '2rem', height: '1.5rem' }}></FaFacebook> Signup with Facebook</p>
+                                            <button onClick={handleLogin} type='button' className='p-2 border-0 bg-transparent' style={{ margin: '0' }}><FaFacebook className='text-primary' style={{ width: '2rem', height: '1.5rem' }}></FaFacebook> Signup with Facebook</button>
                                         </div>
                                         <div className='mt-2 d-flex align-items-center justify-content-center border border-1' >
-                                            <p className='p-2' style={{ margin: '0' }}><FcGoogle className='text-primary' style={{ width: '2rem', height: '1.5rem' }}></FcGoogle> Signup with Facebook</p>
+                                            <button onClick={handleLogin} type='button' className='p-2 border-0 bg-transparent' style={{ margin: '0' }}><FcGoogle className='text-primary' style={{ width: '2rem', height: '1.5rem' }}></FcGoogle> Signup with Facebook</button>
                                         </div>
 
                                     </div>
@@ -150,21 +150,21 @@ const Navbar = () => {
 
                                         </div>
 
-                                        <button type="button" className='mt-4 btn btn-primary rounded-pill container-fluid fw-semibold d-none d-md-block'>Sign In</button>
+                                        <button onClick={handleLogin} type="button" className='mt-4 btn btn-primary rounded-pill container-fluid fw-semibold d-none d-md-block'>Sign In</button>
 
                                         <div className='d-flex align-items-center justify-content-between d-block d-md-none d-lg-none d-xl-none d-xxl-none'>
-                                            <button type="button" className='mt-4 px-5 btn btn-primary rounded-pill fw-semibold'>Sign In</button>
+                                            <button onClick={handleLogin} type="button" className='mt-4 px-5 btn btn-primary rounded-pill fw-semibold'>Sign In</button>
                                             <button type="button" className='mt-4 bg-transparent border-0 fw-semibold' data-bs-toggle="modal" data-bs-target="#myModal" style={{ fontSize: '.8rem' }} ><u>or, Create Account</u></button>
                                         </div>
 
                                         <div className='mt-4 d-flex align-items-center justify-content-center border border-1' >
-                                            <p className='p-2' style={{ margin: '0' }}><FaFacebook className='text-primary' style={{ width: '2rem', height: '1.5rem' }}></FaFacebook> Signup with Facebook</p>
+                                            <button onClick={handleLogin} type='button' className='p-2 border-0 bg-transparent'><FaFacebook className='text-primary' style={{ width: '2rem', height: '1.5rem' }}></FaFacebook> Signup with Facebook</button>
                                         </div>
                                         <div className='mt-2 d-flex align-items-center justify-content-center border border-1' >
-                                            <p className='p-2' style={{ margin: '0' }}><FcGoogle className='text-primary' style={{ width: '2rem', height: '1.5rem' }}></FcGoogle> Signup with Facebook</p>
+                                            <button onClick={handleLogin} type='button' className='p-2 border-0 bg-transparent'><FcGoogle className='text-primary' style={{ width: '2rem', height: '1.5rem' }}></FcGoogle> Signup with Facebook</button>
                                         </div>
                                         <div className='mt-4 d-flex align-items-center justify-content-center' >
-                                            <p className='fw-bolder' style={{ margin: '0', fontSize: '.8rem' }}> Forget Password?</p>
+                                            <button className='fw-bolder border-0 bg-transparent' style={{ fontSize: '.8rem' }}> Forget Password?</button>
                                         </div>
                                     </div>
                                 </div>

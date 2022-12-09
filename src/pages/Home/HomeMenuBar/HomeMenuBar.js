@@ -6,20 +6,20 @@ const HomeMenuBar = () => {
     const { loggedIn } = useContext(StateContext);
 
     return (
-        <div className='mt-4 container d-flex justify-content-between align-items-center p-2 border-bottom border-2'>
+        <div className='mt-4 container d-flex justify-content-between align-items-center p-2 border-bottom border-2' style={{ padding: '0' }}>
             <div className='d-flex col-md-6'>
 
-                <p className='d-none d-md-block  mx-2 fw-bolder text-black' style={{ margin: '0' }}>All Posts(32)</p>
+                <p className='d-none d-md-block  mx-2 fw-bolder text-black' style={{ margin: '0', fontSize: '1.2vw' }}>All Posts(32)</p>
 
                 <p className='d-block d-md-none d-lg-none d-xl-none d-xxl-none mx-2 fw-bolder text-black' style={{ margin: '0' }}>Posts(368)</p>
 
-                <p className='d-none d-md-block  mx-2 fs-normal' style={{ margin: '0' }}>Article</p>
+                <p className='d-none d-md-block  mx-2' style={{ margin: '0', fontSize: '1.2vw' }}>Article</p>
 
-                <p className='d-none d-md-block  mx-2 fs-normal' style={{ margin: '0' }}>Event</p>
+                <p className='d-none d-md-block  mx-2 ' style={{ margin: '0', fontSize: '1.2vw' }}>Event</p>
 
-                <p className='d-none d-md-block  mx-2 fs-normal' style={{ margin: '0' }}>Education</p>
+                <p className='d-none d-md-block  mx-2 ' style={{ margin: '0', fontSize: '1.2vw' }}>Education</p>
 
-                <p className='d-none d-md-block  mx-2 fs-normal' style={{ margin: '0' }}>Job</p>
+                <p className='d-none d-md-block  mx-2 ' style={{ margin: '0', fontSize: '1.2vw' }}>Job</p>
             </div>
             <div className='col-md-6 container-fluid d-flex justify-content-end' style={{ marginRight: '0', paddingRight: '0' }}>
                 <div className='d-none d-md-flex'>
