@@ -33,7 +33,7 @@ const HomeBanner = () => {
             <div className='position-absolute d-block d-lg-none d-xl-none d-xxl-none' style={{ right: '1rem', top: '1rem' }}>
                 {
                     loggedIn ?
-                        <button type="button" className="border border-1 bg-transparent text-white p-2 rounded " style={{ fontSize: '1.8vw' }}>Leave Group</button>
+                        <button type="button" className="border border-1 bg-transparent text-white p-2 rounded " data-bs-toggle="modal" data-bs-target="#myModal1" style={{ fontSize: '1.8vw' }}>Leave Group</button>
                         :
                         <button type="button" className="border border-1 bg-transparent text-white p-2 rounded" data-bs-toggle="modal" data-bs-target="#myModal1" style={{ fontSize: '1.8vw' }}> Join Group</button>
                 }
@@ -72,24 +72,23 @@ const HomeBanner = () => {
                                         </div>
 
                                         <input disabled type="text" className="p-2 container-fluid" placeholder='Confirm Password' />
-                                        <button onClick={handleLogin} type="button" className='mt-4 btn btn-primary rounded-pill container-fluid fw-semibold d-none d-md-block'>Create Account</button>
+                                        <button data-bs-dismiss="modal" onClick={handleLogin} type="button" className='mt-4 btn btn-primary rounded-pill container-fluid fw-semibold d-none d-md-block'>Create Account</button>
 
                                         <div className='d-flex align-items-center justify-content-between d-block d-md-none d-lg-none d-xl-none d-xxl-none'>
-                                            <button onClick={handleLogin} type="button" className='mt-4 px-4 btn btn-primary rounded-pill fw-semibold'>Create Account</button>
+                                            <button data-bs-dismiss="modal" onClick={handleLogin} type="button" className='mt-4 px-4 btn btn-primary rounded-pill fw-semibold'>Create Account</button>
                                             <button type="button" className='mt-4 bg-transparent border-0 fw-semibold' data-bs-toggle="modal" data-bs-target="#myModal3" style={{ fontSize: '.8rem' }} ><u>or, Sign In</u></button>
                                         </div>
 
                                         <div className='mt-4 d-flex align-items-center justify-content-center border border-1' >
-                                            <button onClick={handleLogin} type='button' className='p-2 border-0 bg-transparent' style={{ margin: '0' }}><FaFacebook className='text-primary' style={{ width: '2rem', height: '1.5rem' }}></FaFacebook> Signup with Facebook</button>
+                                            <button data-bs-dismiss="modal" onClick={handleLogin} type='button' className='p-2 border-0 bg-transparent' style={{ margin: '0' }}><FaFacebook className='text-primary' style={{ width: '2rem', height: '1.5rem' }}></FaFacebook> Signup with Facebook</button>
                                         </div>
                                         <div className='mt-2 d-flex align-items-center justify-content-center border border-1' >
-                                            <button onClick={handleLogin} type='button' className='p-2 border-0 bg-transparent' style={{ margin: '0' }}><FcGoogle className='text-primary' style={{ width: '2rem', height: '1.5rem' }}></FcGoogle> Signup with Facebook</button>
+                                            <button data-bs-dismiss="modal" onClick={handleLogin} type='button' className='p-2 border-0 bg-transparent' style={{ margin: '0' }}><FcGoogle className='text-primary' style={{ width: '2rem', height: '1.5rem' }}></FcGoogle> Signup with Facebook</button>
                                         </div>
 
                                     </div>
                                 </div>
                                 <div className='col-md-6 text-center'>
-
                                     <p className='mt-3 fw-lighter' style={{ fontSize: '0.8rem' }}>By signing up, you agree to our Terms & conditions, Privacy policy</p>
                                 </div>
                             </div>
@@ -128,7 +127,7 @@ const HomeBanner = () => {
 
                                         </div>
 
-                                        <button onClick={handleLogin} type="button" className='mt-4 btn btn-primary rounded-pill container-fluid fw-semibold d-none d-md-block'>Sign In</button>
+                                        <button data-bs-dismiss="modal" onClick={handleLogin} type="button" className='mt-4 btn btn-primary rounded-pill container-fluid fw-semibold d-none d-md-block'>Sign In</button>
 
                                         <div className='d-flex align-items-center justify-content-between d-block d-md-none d-lg-none d-xl-none d-xxl-none'>
                                             <button onClick={handleLogin} type="button" className='mt-4 px-5 btn btn-primary rounded-pill fw-semibold'>Sign In</button>
@@ -136,10 +135,10 @@ const HomeBanner = () => {
                                         </div>
 
                                         <div className='mt-4 d-flex align-items-center justify-content-center border border-1' >
-                                            <button onClick={handleLogin} type='button' className='p-2 border-0 bg-transparent'><FaFacebook className='text-primary' style={{ width: '2rem', height: '1.5rem' }}></FaFacebook> Signup with Facebook</button>
+                                            <button data-bs-dismiss="modal" onClick={handleLogin} type='button' className='p-2 border-0 bg-transparent'><FaFacebook className='text-primary' style={{ width: '2rem', height: '1.5rem' }}></FaFacebook> Signup with Facebook</button>
                                         </div>
                                         <div className='mt-2 d-flex align-items-center justify-content-center border border-1' >
-                                            <button onClick={handleLogin} type='button' className='p-2 border-0 bg-transparent'><FcGoogle className='text-primary' style={{ width: '2rem', height: '1.5rem' }}></FcGoogle> Signup with Facebook</button>
+                                            <button data-bs-dismiss="modal" onClick={handleLogin} type='button' className='p-2 border-0 bg-transparent'><FcGoogle className='text-primary' style={{ width: '2rem', height: '1.5rem' }}></FcGoogle> Signup with Facebook</button>
                                         </div>
                                         <div className='mt-4 d-flex align-items-center justify-content-center' >
                                             <button className='fw-bolder border-0 bg-transparent' style={{ fontSize: '.8rem' }}> Forget Password?</button>
