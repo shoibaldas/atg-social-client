@@ -9,7 +9,10 @@ import { AiOutlineEye } from "react-icons/ai";
 
 const HomeBanner = () => {
 
-    const { loggedIn, handleLogin } = useContext(StateContext);
+    const { loggedIn, handleUser } = useContext(StateContext);
+    const handleLogin = () => {
+        handleUser();
+    }
 
     return (
         <div className='position-relative'>
