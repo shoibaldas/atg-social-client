@@ -1,13 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../../assets/logo/whole.png';
 import img from '../../../assets/signup/atg_illustration.png';
 import { FaFacebook } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { AiOutlineEye } from "react-icons/ai";
+import img1 from '../../../assets/feedpersons/person4.png';
 import './Navbar.css';
+import { StateContext } from '../../../context/StateProvider';
+
 
 const Navbar = () => {
+    const { loggedIn, handleUser } = useContext(StateContext);
+
+    const handleLogin = () => {
+        handleUser();
+    }
 
     return (
         <div>
@@ -36,7 +44,12 @@ const Navbar = () => {
                     <div className='col-md-3 d-flex justify-content-end'>
                         <ul className="navbar-nav d-flex">
                             <li className="nav-item">
-                                <p className="nav-link text-dark h5 fw-normal fs-6">Create account. <button type="button" className="text-primary fw-bolder border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal">It's free</button> <i className="px-2 fa-solid fa-caret-down"></i></p>
+                                {
+                                    loggedIn ?
+                                        <p className="nav-link text-dark fw-normal" style={{ margin: '0' }}> <img src={img1} alt='' style={{ width: '2.3rem', height: '2.3rem' }} /><span className='mx-2'>Siddharth Goyal</span><i className="px-2 fa-solid fa-caret-down"></i></p>
+                                        :
+                                        <p className="nav-link text-dark h5 fw-normal fs-6">Create account. <button type="button" className="text-primary fw-bolder border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#myModal">It's free</button> <i className="px-2 fa-solid fa-caret-down"></i></p>
+                                }
 
                             </li>
                         </ul>
@@ -81,7 +94,7 @@ const Navbar = () => {
                                         </div>
 
                                         <input disabled type="text" className="p-2 container-fluid" placeholder='Confirm Password' />
-                                        <button type="button" className='mt-4 btn btn-primary rounded-pill container-fluid fw-semibold d-none d-md-block'>Create Account</button>
+                                        <button onClick={handleLogin} type="button" className='mt-4 btn btn-primary rounded-pill container-fluid fw-semibold d-none d-md-block'>Create Account</button>
 
                                         <div className='d-flex align-items-center justify-content-between d-block d-md-none d-lg-none d-xl-none d-xxl-none'>
                                             <button type="button" className='mt-4 px-4 btn btn-primary rounded-pill fw-semibold'>Create Account</button>
