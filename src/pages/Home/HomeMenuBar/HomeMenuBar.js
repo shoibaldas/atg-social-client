@@ -1,5 +1,4 @@
 import React from 'react';
-import './HomeMenuBar.css';
 
 const HomeMenuBar = () => {
     return (
@@ -20,17 +19,17 @@ const HomeMenuBar = () => {
             </div>
             <div className='col-md-6 container-fluid d-flex justify-content-end'>
                 <div className='d-none d-md-flex'>
-                    <button type="button" className="btn btn-light fw-semibold fs-6">Write a Post<i className="mx-2 fa-solid fa-caret-down"></i></button>
+                    <button type="button" className="btn btn-light fw-semibold fs-6" style={{ backgroundColor: '#EDEEF0' }}>Write a Post<i className="mx-2 fa-solid fa-caret-down"></i></button>
                 </div>
                 <div className='d-none d-md-flex mx-2 '>
                     <button type="button" className="btn btn-primary fw-semibold fs-6"><i className="fa-solid fa-user-group"></i><span className='px-2'>Join Group</span></button>
                 </div>
                 <div className='d-flex d-md-none d-lg-none d-xl-none d-xxl-none'>
-                    <button type="button" className="btn btn-light fw-semibold fs-6">Filter: All<i className="mx-2 fa-solid fa-caret-down"></i></button>
+                    <button type="button" className="btn btn-light fw-semibold fs-6" style={{ backgroundColor: '#EDEEF0' }}>Filter: All<i className="mx-2 fa-solid fa-caret-down"></i></button>
                 </div>
             </div>
             <br />
-        </div>
+        </div >
     );
 };
 
